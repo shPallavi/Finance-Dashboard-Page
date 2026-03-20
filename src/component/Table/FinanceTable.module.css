@@ -1,0 +1,66 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.thead {
+  background-color: #f5f7fb;
+}
+
+.th {
+  text-align: left;
+  padding: 16px 20px;
+  font-size: 14px;
+  color: #555;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Body */
+.td {
+  padding: 16px 20px;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Row */
+.row {
+  transition: background 0.2s ease;
+  cursor: pointer;
+}
+
+.row:hover {
+  background-color: #f9fafc;
+}
+
+/* Status styles */
+.statusPaid {
+  color: green;
+  font-weight: 600;
+}
+
+.statusPending {
+  color: orange;
+  font-weight: 600;
+}
+
+.statusOverdue {
+  color: red;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .th,
+  .td {
+    padding: 10px;
+    font-size: 12px;
+  }
+}

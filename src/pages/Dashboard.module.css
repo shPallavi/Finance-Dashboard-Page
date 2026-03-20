@@ -1,0 +1,32 @@
+.dashboard {
+  background-color: #f5f7fb;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* spacing between sections */
+.section {
+  margin-bottom: 20px;
+}
+
+/* grid layout for KPI */
+.kpiWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+/* table + chart layout */
+.bottomSection {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .bottomSection {
+    grid-template-columns: 1fr;
+  }
+}
